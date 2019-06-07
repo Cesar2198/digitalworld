@@ -1,0 +1,116 @@
+.contenedorform{
+    color:white;
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.contenedortodo{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/Fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+input[type = "submit"]{
+	background-color: #1565c0;
+	border-radius: 5px;
+	color: white;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 40px;
+}
+
+
+
+input[type = "reset"]{
+	background-color: #1565c0;
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    height: 40px;
+    border: none;
+}
+
+ input[type = "text"],
+ input[type = "date"],
+ input[type = "email"]{
+    color: white;
+    border: none;
+    border-bottom: 3px solid white;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+    padding: 8px;
+    display: 16px;
+    width: 250px; 
+    height: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+::placeholder{
+    font-size: 15px;
+    font-weight: 10px;
+}
+
+.logos i{
+color:white;
+}
+
+.logos i:hover{
+    transform: scale(1.5);
+}
+
+
+textarea{
+	border: 1px solid black;
+}
+
+.Contactanos h2  {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.Contactanos p {
+    display: flex;
+    justify-content: center;
+}
+.txtb label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtb textarea{
+    border:none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 6px;
+    height: 150%;
+    padding: 8px;
+    width: 300px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+a:active, a:active * { outline: none !important; }
+a:focus, a:focus * { outline: none !important;  }
+
+.headerscrl{
+    background-color: 0,0,0,4;
+    padding: 10px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
