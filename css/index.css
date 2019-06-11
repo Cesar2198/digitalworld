@@ -317,4 +317,7 @@ a:focus, a:focus * { outline: none !important;  }
     border:none;
     outline: none;
     display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
