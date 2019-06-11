@@ -227,6 +227,7 @@
             </div>
         </div>
     </div>
+    <button id="TopBtn"><i class="fas fa-arrow-up"></i></button>
     <div class="row Footer">
         <footer>
             <div class="col-12 col-t-12 ">
@@ -239,4 +240,19 @@
 <script src="../js/script.js">
 </script>
 <script src="../js/jquery-3.4.1.js"> </script>
+<script>
+        $(document).ready(function(){
+    
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 40){
+                    $("#TopBtn").fadeIn();
+                }else{
+                    $("#TopBtn").fadeOut();
+                }
+            });
+            $("#TopBtn").click(function(){
+                $('html, body ').animate({scrollTop: 0},800);
+            })
+        })
+    </script>
 </html>
