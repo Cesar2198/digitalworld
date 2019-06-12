@@ -51,12 +51,12 @@
     <div class="row">
         <div class="col-12 col-t-12 titulo">
             <h3>
-                BIENVENIDOS A NUESTRA GALERIA
+                ¡BIENVENIDOS A NUESTRA GALERIA!
             </h3>
         </div>
         <div class="col-12 col-t-12 texto">
             <p>
-                En esta sección encontraras un poco mas de quienes somos, la galeria mostrada data desde la creacion de quienes somos ahora junto con hechos
+                En esta sección encontrarás un poco mas de quienes somos, la galeria mostrada data desde la creacion de quienes somos ahora junto con hechos
                 muy trascendentes, mostrando tambien proyectos y clientes totalmente satisfechos para dar prueba de nuestro profesionalismo a la hora de ejercer labores,
                 Esperamos la disfruten!
                 <br>
@@ -66,13 +66,37 @@
         </div>
         <div class="col-12 col-t-12 container">
             <div class="item">
-                <a href="../img/imagen11.jpg" data-lightbox="mygallery" data-title="Proyecto I"><img
-                        src="../img/imagen11.jpg" alt=""></a>
+                <a href="../img/charla.jpeg" data-lightbox="mygallery" data-title="Evento en Hotel."><img
+                        src="../img/charla.jpeg" alt=""></a>
             </div>
             <div class="item">
-                <a href="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                    data-lightbox="mygallery" data-title="Proyecto I"><img
-                        src="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
+                <a href="../img/index.jpeg"
+                    data-lightbox="mygallery" data-title="Convención en San Salvador."><img
+                        src="../img/index.jpeg"
+                        alt=""></a>
+            </div>
+            <div class="item">
+                <a href="../img/presentacion.jpeg"
+                    data-lightbox="mygallery" data-title="Charla Hotel Presidencial."><img
+                        src="../img/presentacion.jpeg"
+                        alt=""></a>
+            </div>
+            <div class="item">
+                <a href="../img/charla2.jpeg"
+                    data-lightbox="mygallery" data-title="Evento en Panamá."><img
+                        src="../img/charla2.jpeg"
+                        alt=""></a>
+            </div>
+            <div class="item">
+                <a href="../img/charla3.jpeg"
+                    data-lightbox="mygallery" data-title="Evento de c# Universidad de Sonsonate(USO)"><img
+                        src="../img/charla3.jpeg"
+                        alt=""></a>
+            </div>
+            <div class="item">
+                <a href="../img/evento.jpeg"
+                    data-lightbox="mygallery" data-title="Colaboracion Con IEEE."><img
+                        src="../img/evento.jpeg"
                         alt=""></a>
             </div>
             <div class="item">
@@ -201,38 +225,9 @@
                         src="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
                         alt=""></a>
             </div>
-            <div class="item">
-                <a href="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                    data-lightbox="mygallery" data-title="Proyecto I"><img
-                        src="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                        alt=""></a>
-            </div>
-            <div class="item">
-                <a href="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                    data-lightbox="mygallery" data-title="Proyecto I"><img
-                        src="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                        alt=""></a>
-            </div>
-            <div class="item">
-                <a href="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                    data-lightbox="mygallery" data-title="Proyecto I"><img
-                        src="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                        alt=""></a>
-            </div>
-            <div class="item">
-                <a href="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                    data-lightbox="mygallery" data-title="Proyecto I"><img
-                        src="https://images.pexels.com/photos/255349/pexels-photo-255349.jpeg?h=350&auto=compress&cs=tinysrgb"
-                        alt=""></a>
-            </div>
-            <div class="item">
-                <a href="../img/imagen11.jpg" data-lightbox="mygallery" data-title="Proyecto I"><img
-                        src="../img/imagen11.jpg" alt=""></a>
-            </div>
-
         </div>
     </div>
-
+    <button id="TopBtn" type="submit"><i class="fas fa-arrow-up"></i></button>
     <div class="row Footer">
         <footer>
             <div class="col-12 col-t-12 ">
@@ -245,4 +240,21 @@
 <script src="../js/script.js"></script>
 <script src="../js/lightbox-plus-jquery.min.js"></script>
 <script src="../js/jquery-3.4.1.js"> </script>
+<script>
+    $(document).ready(function(){
+
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 50){
+                $("#TopBtn").fadeIn();
+            }else{
+                $("#TopBtn").fadeOut();
+            }
+        });
+
+
+        $("#TopBtn").click(function(){
+            $('html, body ').animate({scrollTop: 0},800);
+        })
+    })
+</script>
 </html>
