@@ -311,7 +311,7 @@ a:focus, a:focus * { outline: none !important;  }
     font-size: 22px;
     width: 50px;
     height: 50px;
-    background:rgb(230,74,25,0.5);
+    background: rgb(230,74,25);
     color: white;
     cursor: pointer;
     border:none;
@@ -320,9 +320,11 @@ a:focus, a:focus * { outline: none !important;  }
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: 0;   
+    border-radius: 0;  
+    opacity: 0.5; 
 }
 #TopBtn:hover{
     background:#e64a19;
     transition: 0.5s;
+    opacity: 1.0;
 }
