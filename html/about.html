@@ -41,10 +41,9 @@
         </div>
     </div>
     <div class="col-3 col-t-12 si">
-        <label class="switch">
-            <input id="CambiadorDeTema" type="checkbox">
-            <span class="slider round "></span>
-        </label>
+            <div id="CambiadorDeTema" class="toggle-btn">
+                    <div class="inner-circle"></div>
+                </div>
     </div>
     <div class="Informacion">
         <div class="row">
@@ -254,5 +253,23 @@
                 $('html, body ').animate({scrollTop: 0},800);
             })
         })
+    </script>
+    
+<script>
+        $(document).ready(function () {
+           
+            $('.toggle-btn').click(function () {
+                $('.toggle-btn').toggleClass('active');
+                let BotonCambiado =  document.body.classList.toggle('active');
+                sessionStorage.setItem('Boton-Cambiado', BotonCambiado);
+            })
+    
+            if (JSON.parse(sessionStorage.getItem('Boton-Cambiado'))) {
+                $(".toggle-btn").addClass('active');
+            }
+            else{
+                $(".toggle-btn").removeClass('active');
+            }
+        });
     </script>
 </html>

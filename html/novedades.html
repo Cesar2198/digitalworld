@@ -8,8 +8,8 @@
     <meta name="theme-color" content="black">
     <title>DigitalWorld.com</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/font.css">
@@ -36,17 +36,17 @@
     </div>
     <div class="row col-12 col-t-12 nav2">
         <div class="col-12 col-t-3 navi">
-                <a target="_blank"href="https://www.facebook.com/"><i id="cambio" class="fab fa-facebook"></i></a>
-                <a target="_blank"href="https://www.instagram.com"><i id="cambio1" class="fab fa-instagram"></i></a>
-                <a target="_blank"href="https:///www.twitter.com"><i id="cambio2" class="fab fa-twitter"></i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCWmhqrxnh9QSO2EomzUpYpg"><i id="cambio3" class="fab fa-youtube"></i></a>
+            <a target="_blank" href="https://www.facebook.com/"><i id="cambio" class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com"><i id="cambio1" class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https:///www.twitter.com"><i id="cambio2" class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCWmhqrxnh9QSO2EomzUpYpg"><i id="cambio3"
+                    class="fab fa-youtube"></i></a>
         </div>
     </div>
     <div class="col-3 col-t-12 si">
-        <label class="switch">
-            <input id="CambiadorDeTema" type="checkbox">
-            <span class="slider round "></span>
-        </label>
+        <div id="CambiadorDeTema" class="toggle-btn">
+            <div class="inner-circle"></div>
+        </div>
     </div>
     <div class="row">
         <div class="informacion">
@@ -121,8 +121,8 @@
     <br>
     <div class="row noticia">
         <div class="col-4 col-t-6">
-            <a href="../img/c++.jpg" data-lightbox="Noticia-2" data-title="C++"> <img class="imgresponsive1" src="../img/c++.jpg"
-                    alt=""></a>
+            <a href="../img/c++.jpg" data-lightbox="Noticia-2" data-title="C++"> <img class="imgresponsive1"
+                    src="../img/c++.jpg" alt=""></a>
         </div>
         <div class="col-8 col-t-6">
             <h2>C++</h2>
@@ -184,8 +184,8 @@
     <br>
     <div class="row noticia">
         <div class="col-4 col-t-6">
-            <a href="../img/Code_blocks.png" data-lightbox="Noticia-3" data-title="Code::Blocks Studio"> <img class="imgresponsive1"
-                    src="../img/Code_blocks.png" alt=""></a>
+            <a href="../img/Code_blocks.png" data-lightbox="Noticia-3" data-title="Code::Blocks Studio"> <img
+                    class="imgresponsive1" src="../img/Code_blocks.png" alt=""></a>
         </div>
         <div class="col-8 col-t-6">
             <h2>Code::Blocks Studio</h2>
@@ -277,39 +277,45 @@
                     la
                     estructura JSON existente con una clave asociada. Puedes entregar tus propias claves, como ID de
                     usuario o nombres semánticos, o también puedes obtenerlas mediante el método push().</p>
-                    <br>
-                    <p>Recomendaciones para la estructura de datos
-                        Evita la anidación de datos
-    
-                        Debido a que Firebase Realtime Database permite anidar datos en un máximo de 32 niveles, es posible
-                        que te resulte tentador pensar que esta debe ser la estructura predeterminada. Sin embargo, cuando
-                        obtienes datos de una ubicación de la base de datos, también se recuperan todos los nodos
-                        secundarios. Además, cuando le otorgas a alguien acceso de lectura o escritura en un nodo de la
-                        base
-                        de datos, también le otorgas acceso a todos los datos que se encuentran en ese nodo. Por lo tanto,
-                        en la práctica, lo ideal es que la estructura de los datos sea lo más simple posible.</p>
-                    <p>Crea datos escalables
+                <br>
+                <p>Recomendaciones para la estructura de datos
+                    Evita la anidación de datos
+
+                    Debido a que Firebase Realtime Database permite anidar datos en un máximo de 32 niveles, es posible
+                    que te resulte tentador pensar que esta debe ser la estructura predeterminada. Sin embargo, cuando
+                    obtienes datos de una ubicación de la base de datos, también se recuperan todos los nodos
+                    secundarios. Además, cuando le otorgas a alguien acceso de lectura o escritura en un nodo de la
+                    base
+                    de datos, también le otorgas acceso a todos los datos que se encuentran en ese nodo. Por lo tanto,
+                    en la práctica, lo ideal es que la estructura de los datos sea lo más simple posible.</p>
+                <p>Crea datos escalables
             </div>
             <div class="col-6 col-t-6">
-               
 
-                    Cuando se crean apps, por lo general es mejor descargar un subconjunto de una lista. Esto resulta
-                    particularmente común si la lista contiene miles de registros. Cuando esta relación es estática y
-                    unidireccional, simplemente se pueden anidar los objetos secundarios bajo los primarios.
 
-                    A veces, esta relación es más dinámica o tal vez se necesite desnormalizar los datos. En muchas
-                    ocasiones, los datos pueden desnormalizarse mediante una consulta para recuperar un subconjunto de
-                    los datos, tal como se explica en Cómo recuperar datos.
+                Cuando se crean apps, por lo general es mejor descargar un subconjunto de una lista. Esto resulta
+                particularmente común si la lista contiene miles de registros. Cuando esta relación es estática y
+                unidireccional, simplemente se pueden anidar los objetos secundarios bajo los primarios.
 
-                    Pero incluso esto puede no ser suficiente. Por ejemplo, considera una relación bidireccional entre
-                    usuarios y grupos. Los usuarios pueden pertenecer a un grupo y los grupos son una lista de
-                    usuarios.
-                    Pero cuando llega el momento de decidir a qué grupo pertenece un usuario, la situación se complica.
-                    <br>
-                    <br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit repellendus corrupti eligendi blanditiis. Quisquam eveniet quibusdam voluptas inventore deleniti numquam velit accusantium perspiciatis esse, maiores distinctio, sapiente voluptatum quis non?
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corporis quos nihil explicabo doloremque esse veniam earum nam quas maxime, error dignissimos officia. Dignissimos aliquid reprehenderit asperiores aperiam! Dolorum, reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error laboriosam nesciunt fugit distinctio architecto? Omnis dolor reprehenderit repudiandae. Voluptate vitae animi laudantium optio! Quas in eos modi, similique fugiat repellat!.
+                A veces, esta relación es más dinámica o tal vez se necesite desnormalizar los datos. En muchas
+                ocasiones, los datos pueden desnormalizarse mediante una consulta para recuperar un subconjunto de
+                los datos, tal como se explica en Cómo recuperar datos.
+
+                Pero incluso esto puede no ser suficiente. Por ejemplo, considera una relación bidireccional entre
+                usuarios y grupos. Los usuarios pueden pertenecer a un grupo y los grupos son una lista de
+                usuarios.
+                Pero cuando llega el momento de decidir a qué grupo pertenece un usuario, la situación se complica.
+                <br>
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit repellendus corrupti eligendi
+                blanditiis. Quisquam eveniet quibusdam voluptas inventore deleniti numquam velit accusantium
+                perspiciatis esse, maiores distinctio, sapiente voluptatum quis non?
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corporis quos nihil explicabo doloremque
+                esse veniam earum nam quas maxime, error dignissimos officia. Dignissimos aliquid reprehenderit
+                asperiores aperiam! Dolorum, reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Error laboriosam nesciunt fugit distinctio architecto? Omnis dolor reprehenderit repudiandae. Voluptate
+                vitae animi laudantium optio! Quas in eos modi, similique fugiat repellat!.
                 </p>
             </div>
         </div>
@@ -400,7 +406,7 @@
                         </a>
                     </li>
             </div>
-        </div>   
+        </div>
     </div>
     <button id="TopBtn"><i class="fas fa-arrow-up"></i></button>
     <div class="row Footer">
@@ -417,21 +423,38 @@
 <script src="../js/reproductor.js"></script>
 <script src="../js/jquery-3.4.1.js"> </script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 50){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
                 $("#TopBtn").fadeIn();
-            }else{
+            } else {
                 $("#TopBtn").fadeOut();
             }
         });
 
 
-        $("#TopBtn").click(function(){
-            $('html, body ').animate({scrollTop: 0},800);
+        $("#TopBtn").click(function () {
+            $('html, body ').animate({ scrollTop: 0 }, 800);
         })
     })
+</script>
+<script>
+    $(document).ready(function () {
+
+        $('.toggle-btn').click(function () {
+            $('.toggle-btn').toggleClass('active');
+            let BotonCambiado = document.body.classList.toggle('active');
+            sessionStorage.setItem('Boton-Cambiado', BotonCambiado);
+        })
+
+        if (JSON.parse(sessionStorage.getItem('Boton-Cambiado'))) {
+            $(".toggle-btn").addClass('active');
+        }
+        else {
+            $(".toggle-btn").removeClass('active');
+        }
+    });
 </script>
 
 

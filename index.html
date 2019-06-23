@@ -9,16 +9,17 @@
     <title>DigitalWorld</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
+
 <body>
     <div class="superior">
         <div class="row header encabezado">
             <div class="col-7 col-t-6">
-                <h1><a href="index.html">DIGITALWORLD</a></h1> 
+                <h1><a href="index.html">DIGITALWORLD</a></h1>
             </div>
             <div class="col-5 col-t-6 nav">
                 <div class="navi">
@@ -33,17 +34,17 @@
     <div class="row medio">
         <div class="row col-12 col-t-12 nav2">
             <div class="col-12 col-t-3 navi">
-                    <a target="_blank"href="https://www.facebook.com/"><i id="cambio" class="fab fa-facebook"></i></a>
-                    <a target="_blank"href="https://www.instagram.com"><i id="cambio1" class="fab fa-instagram"></i></a>
-                    <a target="_blank"href="https:///www.twitter.com"><i id="cambio2" class="fab fa-twitter"></i></a>
-                    <a target="_blank" href="https://www.youtube.com/channel/UCWmhqrxnh9QSO2EomzUpYpg"><i id="cambio3" class="fab fa-youtube"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i id="cambio" class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com"><i id="cambio1" class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https:///www.twitter.com"><i id="cambio2" class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCWmhqrxnh9QSO2EomzUpYpg"><i id="cambio3"
+                        class="fab fa-youtube"></i></a>
             </div>
         </div>
         <div class="col-3 col-t-12 si">
-            <label class="switch">
-                <input id="CambiadorDeTema" type="checkbox">
-                <span class="slider round "></span>
-            </label>
+                <div id="CambiadorDeTema" class="toggle-btn">
+                        <div class="inner-circle"></div>
+                    </div>
         </div>
         <div class="col-12 col-t-12">
             <div class="col-6 col-t-6">
@@ -63,21 +64,23 @@
                 <hr>
                 <p>
                     <b>Misión: <i>Con una cultura de apoyo emprender negocios y grandes inversiones haciendolas realidad
-                        con la tecnologia mas nueva y fresca, sirviendo siempre con el profesionalismo que se merecen nuestros clientes.</i>
+                            con la tecnologia mas nueva y fresca, sirviendo siempre con el profesionalismo que se
+                            merecen nuestros clientes.</i>
                     </b>
                 </p>
                 <br>
-                <p> <b>Visión: <i>Con la fé puesta en Dios y nuestro sudor del dia a dia llegar a ser un estandarte 
-                    de la tecnologia y sus constantes avances, procurando mejorar dia a dia sin mirar atras.
-                </i>
-                </b>
+                <p> <b>Visión: <i>Con la fé puesta en Dios y nuestro sudor del dia a dia llegar a ser un estandarte
+                            de la tecnologia y sus constantes avances, procurando mejorar dia a dia sin mirar atras.
+                        </i>
+                    </b>
 
                 </p>
                 <br>
             </div>
             <div class="col-6 col-t-6 ">
                 <div class="center">
-                    <a href="img/index.jpeg" data-lightbox="FotoGrupal" data-title="DIGITALWORLD.COM"><img class="imgresponsive1" src="img/index.jpeg" alt=""></a></div>
+                    <a href="img/index.jpeg" data-lightbox="FotoGrupal" data-title="DIGITALWORLD.COM"><img
+                            class="imgresponsive1" src="img/index.jpeg" alt=""></a></div>
             </div>
         </div>
     </div>
@@ -115,9 +118,12 @@
                     <h2>William Adonay Navarro Morales</h2>
                     <hr>
                     <br>
-                    <p>"-DigitalWorld, bueno mas bien nuestra empresa, donde empiezo; es algo que jamas crei que se iba a hacer realidad,
-                        pero con el esfuerzo y dedicación todo se puede, al empezar a trabajar empece a imaginar sobre que ibamos a innovar
-                        en el futuro y pues recordemos que la imaginación es mas que el pensamiento, asi que ahora tenemos que lo que queriamos en DigitalWorld
+                    <p>"-DigitalWorld, bueno mas bien nuestra empresa, donde empiezo; es algo que jamas crei que se iba
+                        a hacer realidad,
+                        pero con el esfuerzo y dedicación todo se puede, al empezar a trabajar empece a imaginar sobre
+                        que ibamos a innovar
+                        en el futuro y pues recordemos que la imaginación es mas que el pensamiento, asi que ahora
+                        tenemos que lo que queriamos en DigitalWorld
                         y puedo afirmar que hoy en dia somos y seguiremos siendo los mejores."
                         <br>
                         <br>
@@ -141,22 +147,40 @@
 <script src="js/jquery-3.4.1.js"> </script>
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <script>
-        $(document).ready(function(){
-    
-            $(window).scroll(function(){
-                if($(this).scrollTop() > 50){
-                    $("#TopBtn").fadeIn();
-                }else{
-                    $("#TopBtn").fadeOut();
-                }
-            });
-    
-    
-            $("#TopBtn").click(function(){
-                $('html, body ').animate({scrollTop: 0},800);
-            })
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $("#TopBtn").fadeIn();
+            } else {
+                $("#TopBtn").fadeOut();
+            }
+        });
+
+
+        $("#TopBtn").click(function () {
+            $('html, body ').animate({ scrollTop: 0 }, 800);
         })
-    </script>
+    })
+</script>
+
+<script>
+    $(document).ready(function () {
+       
+        $('.toggle-btn').click(function () {
+            $('.toggle-btn').toggleClass('active');
+            let BotonCambiado =  document.body.classList.toggle('active');
+            sessionStorage.setItem('Boton-Cambiado', BotonCambiado);
+        })
+
+        if (JSON.parse(sessionStorage.getItem('Boton-Cambiado'))) {
+            $(".toggle-btn").addClass('active');
+        }
+        else{
+            $(".toggle-btn").removeClass('active');
+        }
+    });
+</script>
 
 
 </html>

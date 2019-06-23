@@ -9,7 +9,6 @@ if (JSON.parse(sessionStorage.getItem('tema-oscuro-siempre'))) {
     document.body.classList.add('Tema-oscuro');
 }
 
-
 window.onload = () => {
     console.log(localStorage.getItem('check'));
 
@@ -24,4 +23,3 @@ ch.onchange = function () {
 }
 
 
-    
